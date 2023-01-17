@@ -25,7 +25,7 @@ alias shiftback='redshift -P -O 6500'
 alias tw='taskwarrior-tui'
 alias ls='exa --icons'
 alias p='python'
-alias e='vim'
+alias e='nvim'
 
 
 
@@ -61,3 +61,9 @@ export STARSHIP_CONFIG=~/.starship/config.toml
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION
+
+############# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/bin/virtualenvwrapper.sh
+
