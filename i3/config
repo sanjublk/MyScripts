@@ -43,7 +43,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec kitty --single-instance
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -200,8 +200,8 @@ bar {
 	}
 }
 
-#bindcode 133 bar mode toggle
-#bindcode 133 --release bar mode hide
+# bindcode 133 bar mode toggle
+# bindcode 133 --release bar mode hide
 
 bindsym mod4+l exec i3lock
 
@@ -316,9 +316,24 @@ bindsym $mod+Shift+x exec /home/sanju/bin/power
 
 bindsym mod4+o exec /home/sanju/bin/mpv_play
 
-bindsym mod4+p exec --no-startup-id "/home/sanju/bin/ytfzf -fD"
+bindsym mod4+p exec --no-startup-id "ytfzf -fD"
 
 
 
 ############################dualmonitor############################################
 bindsym $mod+Tab exec i3-msg move workspace to output right
+
+
+##### autocutsel
+
+
+## exec --no-startup-id autocutsel -fork
+## exec --no-startup-id autocutsel -selection PRIMARY -fork
+
+### dunst
+exec --no-startup-id dunst
+
+
+#################################ebit engine ####################################
+
+for_window [title="unique"] move absolute position 1335 0
