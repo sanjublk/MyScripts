@@ -1,0 +1,78 @@
+{
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "g",
+        "I"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.smartRelativeLine": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-p>": false
+  },
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "editor.fontSize": 16,
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontWeight": "500",
+  "editor.lineHeight": 0,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.fontLigatures": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "python.languageServer": "Default"
+}
